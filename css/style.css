@@ -20,7 +20,8 @@ html {
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(35, 33, 34);
+    color: rgb(226, 226, 226);
     line-height: 1.5;
 }
 
@@ -33,19 +34,21 @@ main {
 
 /* HEADER SEKSJON */
 .primary-header {
-    position: fixed; /* Set position to fixed */
-    top: 0; /* Stick to the top of the viewport */
-    width: 100%; /* Take up full width of viewport */
-    z-index: 1000; /* Ensure it appears above other content */
-    background-color: rgb(34, 175, 36);
-    display: flex;   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(50, 50, 50); 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
 
 .header-nav-bar {
     display: flex;
     align-items: center;
-    background-color: rgb(239, 20, 20);
-    width: 100%; /* Ensure it takes up full width */
+    /* background-color: rgba(239, 20, 20, 0); */
+    width: 100%; 
 }
 
 #logo {
@@ -61,7 +64,7 @@ main {
     gap: 1rem;
     padding: 0;
     list-style: none;
-    margin-left: 4vw
+    margin-left: 2%;
 }
 
 .hdr-nav-ul a {
@@ -74,40 +77,133 @@ main {
     text-decoration: underline;
 }
  
-.search-form {
-    display: flex;
-    background-color: blue;
-}
-  
-.search-form input[type="text"] {
-    padding: 8px;
+.search-container {
+    position: relative;
+  }
+
+.search-container input[type="text"] {
+    padding: 8px 30px 8px 10px;
     border: 1px solid rgb(35, 35, 35);
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px;
     width: 14vw;
     height: 4vh;
-    margin-top: 15px;
-    background-color:rgb(35, 35, 35);
+    background-color: rgb(35, 35, 35);
+    color: white; 
+    font-size: 1rem;
+  }
+
+.search-form {
+    margin-left: 50%;
+    display: flex;
+    align-items: center;
 }
   
-.search-form button {
-    background-color: rgb(35, 35, 35);
+  
+/* Style for the search button */
+.search-container button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0 10px;
     border: none;
-    border-radius: 0 10px 10px 0;
+    background: transparent;
     cursor: pointer;
-    height: 4vh;
-    margin-top: 15px;
-    margin-top: 15px;
-}
- 
+  }
+
 #search-icon {
+    filter: brightness(0.8);
     height: 30px;
+    transition: filter 0.3s ease; 
 }
-.search-form button:hover {
-    background-color: rgba(35, 35, 35, 0.732);
+.search-container button:hover #search-icon {
+    filter: brightness(1); 
+  }
+
+  /* HEADER  */
+
+
+  /* MAIN  */
+
+#main-content-container {
+    display: flex;
+    flex-direction: row;
+    height: 1200px;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0);
 }
 
+.movies-container {
+    display: flex;
+    width: 82%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
 
+}
 
+#right-container {
+    background-color: palevioletred;
+    width: 18%;
+    position: fixed;
+    height: 100%;
+    right: 0;
+}
+
+#main-img {
+    width: 100%;
+    /* background-color: rgb(0, 128, 0); */
+    background-image: url(../images/pirates\ banner.jpg);
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+}
+
+#textbox {
+    background-color: rgba(32, 32, 32, 0.814);
+    width: 30vw;
+    height: 9vh;
+    margin-bottom: 40px;
+    margin-left: 5vw;
+}
+
+#card-container {
+    background-color: yellow;
+    padding: 30px;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    /* flex-wrap: wrap; */
+}
+
+.movies-container {
+    display: flex;
+    justify-content: flex-start; 
+    /* background-color: blue; */
+  }
+  
+.card {
+    background-color: #ff1212;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 215px;
+    height: 309px;
+  }
+
+#movie-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#movie-rating {
+    font-size: 14px;
+    color: #e4e4e4;
+}
+
+/* MAIN */
 
 /* FOOTER */
 .primary-footer {
@@ -124,5 +220,9 @@ main {
     width: 100%;
     margin-block: 3rem;
     color: var(--clr-txt-light);
+}
+
+#mainP-footer {
+    width: 80%;
 }
 
