@@ -173,12 +173,27 @@ main {
 
 #right-container {
     background-color: rgb(29, 27, 28);
-    width: 17%;
+    border: 1px solid rgb(50, 50, 50); 
     position: fixed;
+    width: 17%;
     height: 100%;
     right: 0;
-    border: 1px solid rgb(50, 50, 50); 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
+
+.rcard {
+    background-color: #ff121200;
+    height: 200px;
+    width: 145px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 10px;
+  }
 
 #main-img {
     width: 100%;
@@ -194,24 +209,23 @@ main {
     background-color: rgba(32, 32, 32, 0.814);
     padding:10px;
     width: 30vw;
-    height: 12vh;
     margin-bottom: 40px;
     margin-left: 5vw;
 }
 
 #wNow-btn {
-        background-color: orange;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        padding: 10px 20px; /* Adjust padding as needed */
-        cursor: pointer; /* Show cursor as pointer on hover */
+    margin-top: 15px;
+    margin-left: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer; 
+}
 
-    }
-    
-    /* Optional: Hover effect */
-    .wNow-btn:hover {
-        opacity: 0.8; /* Reduce opacity on hover for visual feedback */
+.wNow-btn:hover {
+        opacity: 0;
 
 }
 
@@ -232,41 +246,67 @@ main {
     margin-left: 50px;
 }
 
-
 #card-container {
     background-color: rgba(245, 17, 9, 0);
-    padding: 30px;
+    padding: 30px 0px 0px 20px;
     display: flex;
     flex-wrap: wrap;
-    width: 80vw;
-    height: 60vh;
-    /* gap: 35px; */
-    /* justify-content: space-evenly; */
+    width: 100%;
+    height: 700px;
+    justify-content: flex-start;
 }
 
 .card {
     background-color: #ff121200;
-    margin-left: 45px;
-    margin-bottom: 20px;
-    height: 235px;
-    height: 235px;
-    width: 150px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    height: 245px;
+    width: 170px;
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: end;
+    /* justify-content: end; */
     flex-direction: column;
+    padding: 10px;
   }
 
-#movie-title {
-    font-size: 5rem;
-    margin-bottom: 5px;
-    color:red;
+.movie-quallity {
+    color:rgb(242, 242, 242);
+    font-size: 1rem;
+    font-weight: 400;
+    align-self: end;
+    margin-top: 5px;
+    /* margin-bottom: 105px; */
+    margin-right: 5px;
+    background-color: rgba(29, 29, 29, 0.734);
+    padding: 0px 3px 0px 3px;
+    border-radius: 3px;
+    top: 1;
 }
 
-#movie-rating {
+.movie-title {
+    font-size: 0.8rem;
+    /* margin-bottom: 5px; */
+    color:rgb(255, 255, 255);
+    align-self: center;
+    text-align: center;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.movie-rating {
     font-size: 14px;
-    color: #000000;
+    color: #fffefe;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    /* margin-bottom: 5px; */
+    align-self: center;
 }
 
 /* MAIN */
