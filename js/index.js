@@ -8,6 +8,8 @@ movies.forEach(movie => {
     const card = document.createElement("div");
     card.classList.add("card");
 
+    card.style.backgroundImage = movie.backgroundImage;
+
     // Create elements for movie title and rating
     const titleElement = document.createElement("h3");
     titleElement.textContent = movie.title;

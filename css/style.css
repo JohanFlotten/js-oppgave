@@ -113,15 +113,15 @@ main {
     padding: 8px 30px 8px 10px;
     border: 1px solid rgb(35, 35, 35);
     border-radius: 4px;
-    width: 14vw;
-    height: 4vh;
+    width: 12vw;
+    height: 3vh;
     background-color: rgb(35, 35, 35);
     color: white; 
     font-size: 1rem;
   }
 
 .search-form {
-    margin-left: 52%;
+    margin-left: 50%;
     display: flex;
     align-items: center;
 }
@@ -141,7 +141,7 @@ main {
 
 #search-icon {
     filter: brightness(0.8);
-    height: 30px;
+    height: 20px;
     transition: filter 0.3s ease; 
 }
 .search-container button:hover #search-icon {
@@ -156,7 +156,7 @@ main {
 #main-content-container {
     display: flex;
     flex-direction: row;
-    height: 1200px;
+    height: 1500px;
     width: 100%;
     background-color: rgba(0, 0, 255, 0);
 }
@@ -192,17 +192,34 @@ main {
 
 #textbox {
     background-color: rgba(32, 32, 32, 0.814);
+    padding:10px;
     width: 30vw;
-    height: 9vh;
+    height: 12vh;
     margin-bottom: 40px;
     margin-left: 5vw;
 }
 
+#wNow-btn {
+        background-color: orange;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px; /* Adjust padding as needed */
+        cursor: pointer; /* Show cursor as pointer on hover */
+
+    }
+    
+    /* Optional: Hover effect */
+    .wNow-btn:hover {
+        opacity: 0.8; /* Reduce opacity on hover for visual feedback */
+
+}
+
 .divider {
+    background-image: linear-gradient(to bottom, rgb(50, 50, 50) 20%, rgb(35, 33, 34) 70%);
     height: 80px;
     display: flex;
     align-items: end;
-    margin-left: 50px;
     font-size: 1.2rem;
     text-decoration: underline;
     text-decoration-color:rgb(255, 163, 26);
@@ -211,34 +228,45 @@ main {
     text-underline-offset: 10px;
 }
 
+#suggestions {
+    margin-left: 50px;
+}
+
 
 #card-container {
-    /* background-color: yellow; */
+    background-color: rgba(245, 17, 9, 0);
     padding: 30px;
     display: flex;
-    width: 100%;
-    height: 400px;
-    gap: 15px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    width: 80vw;
+    height: 60vh;
+    /* gap: 35px; */
+    /* justify-content: space-evenly; */
 }
 
 .card {
-    background-color: #ff1212;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    width: 180px;
-    height: 245px;
+    background-color: #ff121200;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    height: 235px;
+    height: 235px;
+    width: 150px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
   }
 
 #movie-title {
-    font-size: 18px;
+    font-size: 5rem;
     margin-bottom: 5px;
+    color:red;
 }
 
 #movie-rating {
     font-size: 14px;
-    color: #e4e4e4;
+    color: #000000;
 }
 
 /* MAIN */
