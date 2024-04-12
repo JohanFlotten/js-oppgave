@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>JSmovies</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="/js/index.js" type="module" defer></script>
     <!-- FavIcon-->
@@ -34,10 +34,42 @@
           ><img src="./images/JSlogo.png" alt="logo" id="logo"
         /></a>
         <ul class="hdr-nav-ul">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./pages/genre.html">Genre</a></li>
-          <li><a href="./pages/movies.html">Movies</a></li>
-          <li><a href="./pages/tvseries.html">TV-Series</a></li>
+          <li>
+            <a href="../index.html" class="pagebuttons"
+              ><img
+                src="./images/icons8-home-50.png"
+                alt="home icon"
+                id="homeIcon"
+              />Home</a
+            >
+          </li>
+          <li>
+            <a href="./pages/genre.html" class="pagebuttons"
+              ><img
+                src="./images/icons8-play-50.png"
+                alt="genre icon"
+                id="genreIcon"
+              />Genre</a
+            >
+          </li>
+          <li>
+            <a href="./pages/movies.html" class="pagebuttons"
+              ><img
+                src="./images/icons8-clapperboard-24.png"
+                alt="movies icon"
+                id="moviesIcon"
+              />Movies</a
+            >
+          </li>
+          <li>
+            <a href="./pages/tvseries.html" class="pagebuttons"
+              ><img
+                src="./images/icons8-tv-show-50.png"
+                alt="tvseries icon"
+                id="tvIcon"
+              />TV-Series</a
+            >
+          </li>
         </ul>
         <form class="search-form">
           <div class="search-container">
@@ -62,7 +94,15 @@
               <p>olo</p>
             </div>
           </div>
-          <div id="card-container"></div>
+          <div class="divider">
+            <p id="suggestions">Suggestion</p>
+          </div>
+          <div id="card-container">
+            <div id="card">
+              <h3 id="movie-title"></h3>
+              <p id="movie-rating"></p>
+            </div>
+          </div>
         </div>
         <div id="right-container">
           <h3>Lastest movies</h3>

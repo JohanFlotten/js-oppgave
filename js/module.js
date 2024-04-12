@@ -8,8 +8,6 @@ const movies = [
     { title: "Movie 3", rating: "6.8" },
     { title: "Movie 3", rating: "6.8" },
     { title: "Movie 3", rating: "6.8" },
-    { title: "Movie 3", rating: "6.8" },
-    { title: "Movie 3", rating: "6.8" },
     
     // Add more movies as needed
 ];

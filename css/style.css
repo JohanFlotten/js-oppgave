@@ -23,11 +23,12 @@ body {
     background-color: rgb(35, 33, 34);
     color: rgb(226, 226, 226);
     line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
     min-height: 100vh;
-    margin-top: 8vh;
+    margin-top: 7vh;
     padding: 0;
 }
 /* CSS RESET */
@@ -52,7 +53,7 @@ main {
 }
 
 #logo {
-    height: 8vh;
+    height: 7vh;
 }
 
 .logo-link {
@@ -61,7 +62,7 @@ main {
 
 .hdr-nav-ul {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     padding: 0;
     list-style: none;
     margin-left: 2%;
@@ -71,6 +72,33 @@ main {
     text-decoration: none;
     letter-spacing: .1rem;
     color: rgb(153, 153, 153)
+}
+
+.pagebuttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#homeIcon {
+    width: 25px;
+    margin-bottom: 4px;
+}
+
+#genreIcon {
+    width: 28px;
+    margin-bottom: 1px;
+}
+
+#moviesIcon {
+    width: 25px;
+    margin-bottom:4px;
+}
+
+#tvIcon {
+    width: 30px;
+
 }
 
 .hdr-nav-ul a:hover {
@@ -93,7 +121,7 @@ main {
   }
 
 .search-form {
-    margin-left: 50%;
+    margin-left: 52%;
     display: flex;
     align-items: center;
 }
@@ -135,7 +163,7 @@ main {
 
 .movies-container {
     display: flex;
-    width: 82%;
+    width: 83%;
     height: 100%;
     background-color: rgba(255, 0, 0, 0);
     display: flex;
@@ -144,11 +172,12 @@ main {
 }
 
 #right-container {
-    background-color: palevioletred;
-    width: 18%;
+    background-color: rgb(29, 27, 28);
+    width: 17%;
     position: fixed;
     height: 100%;
     right: 0;
+    border: 1px solid rgb(50, 50, 50); 
 }
 
 #main-img {
@@ -156,7 +185,7 @@ main {
     /* background-color: rgb(0, 128, 0); */
     background-image: url(../images/pirates\ banner.jpg);
     background-size: cover;
-    height: 50vh;
+    height: 55vh;
     display: flex;
     align-items: end;
 }
@@ -169,28 +198,37 @@ main {
     margin-left: 5vw;
 }
 
+.divider {
+    height: 80px;
+    display: flex;
+    align-items: end;
+    margin-left: 50px;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-decoration-color:rgb(255, 163, 26);
+    text-decoration-thickness: 2px; 
+    text-decoration-style: solid;
+    text-underline-offset: 10px;
+}
+
+
 #card-container {
-    background-color: yellow;
+    /* background-color: yellow; */
     padding: 30px;
     display: flex;
     width: 100%;
     height: 400px;
+    gap: 15px;
     /* flex-wrap: wrap; */
 }
 
-.movies-container {
-    display: flex;
-    justify-content: flex-start; 
-    /* background-color: blue; */
-  }
-  
 .card {
     background-color: #ff1212;
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
-    width: 215px;
-    height: 309px;
+    width: 180px;
+    height: 245px;
   }
 
 #movie-title {
