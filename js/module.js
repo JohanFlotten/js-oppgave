@@ -21,7 +21,7 @@ const movies = [
 export default movies;
 
 export const latestMovies = [
-    { title: "Dune: Part Two", rating: "6.9", backgroundImage: "url('../images/Dune.jpg')", movieQuallity: "HD"},
+    { title: "Dune: Part Two", rating: "6.9", backgroundImage: "url('./images/Dune.jpg')", movieQuallity: "HD"},
 
 
 ];
